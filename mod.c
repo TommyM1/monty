@@ -31,8 +31,8 @@ void f_mod(stack_t **head, unsigned int counter)
 	if (hd->n == 0)
 	{
 		fprintf(stderr, "L%d: division by zero\n", counter);
-		fclose(chain.file);
-		free(chain.content);
+		fclose(bus.file);
+		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
